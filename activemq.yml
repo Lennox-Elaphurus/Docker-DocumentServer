@@ -9,8 +9,8 @@ services:
     stdin_open: true
     restart: always
     ports:
-      - '80:80'
-      - '443:443'
+      - '9980:80'
+      - '9981:443'
     networks:
       - onlyoffice
 
