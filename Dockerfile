@@ -1,7 +1,6 @@
 FROM docker.io/project31/aarch64-alpine-qemu:3.5
 RUN ["cross-build-start"]
 
-FROM ubuntu:16.04
 LABEL maintainer Ascensio System SIA <support@onlyoffice.com>
 
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8 DEBIAN_FRONTEND=noninteractive
