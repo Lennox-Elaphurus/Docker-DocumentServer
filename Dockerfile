@@ -1,6 +1,7 @@
-FROM docker.io/project31/aarch64-alpine-qemu:3.5
-RUN ["cross-build-start"]
+FROM docker.io/project31/aarch64-alpine-qemu:3.5.4
+RUN [ "cross-build-start" ]
 
+FROM ubuntu:16.04
 LABEL maintainer Ascensio System SIA <support@onlyoffice.com>
 
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8 DEBIAN_FRONTEND=noninteractive
@@ -76,4 +77,4 @@ VOLUME /var/log/onlyoffice /var/lib/onlyoffice /var/www/onlyoffice/Data /var/lib
 
 ENTRYPOINT /app/onlyoffice/run-document-server.sh
 
-RUN ["cross-build-end"]
+RUN [ "cross-build-end" ]
