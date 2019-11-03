@@ -1,3 +1,4 @@
+docker run --rm --privileged multiarch/qemu-user-static:register --reset
 version: '2'
 services:
   onlyoffice-documentserver-data:
