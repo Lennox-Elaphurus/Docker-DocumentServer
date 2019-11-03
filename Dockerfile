@@ -1,6 +1,4 @@
-FROM docker.io/playgali/alpine-qemu:latest
-RUN [ "cross-build-start" ]
-
+FROM resin/rpi-raspbian
 FROM ubuntu:16.04
 
 LABEL maintainer Ascensio System SIA <support@onlyoffice.com>
@@ -77,5 +75,3 @@ RUN echo "$REPO_URL" | tee /etc/apt/sources.list.d/onlyoffice.list && \
 VOLUME /var/log/onlyoffice /var/lib/onlyoffice /var/www/onlyoffice/Data /var/lib/postgresql /usr/share/fonts/truetype/custom
 
 ENTRYPOINT /app/onlyoffice/run-document-server.sh
-
-RUN [ "cross-build-end" ]
