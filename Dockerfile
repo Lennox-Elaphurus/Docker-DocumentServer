@@ -1,5 +1,5 @@
 
-FROM ubuntu 16.04
+FROM ubuntu16.04
 
 LABEL maintainer Ascensio System SIA <support@onlyoffice.com>
 
