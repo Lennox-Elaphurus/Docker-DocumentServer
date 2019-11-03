@@ -1,5 +1,5 @@
-FROM resin/rpi-raspbian
-FROM ubuntu:16.04
+
+FROM ubuntu
 
 LABEL maintainer Ascensio System SIA <support@onlyoffice.com>
 
