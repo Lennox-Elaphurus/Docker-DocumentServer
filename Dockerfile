@@ -1,4 +1,4 @@
-FROM docker.io/project31/aarch64-alpine-qemu:latest
+FROM docker.io/playgali/alpine-qemu:latest
 RUN [ "cross-build-start" ]
 
 FROM ubuntu:16.04
